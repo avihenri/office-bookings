@@ -1,8 +1,10 @@
 <?php
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
+
 use Illuminate\Database\Migrations\Migration;
-class CalendarTable extends Migration
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCalendarTable extends Migration
 {
     /**
      * Run the migrations.
@@ -11,7 +13,7 @@ class CalendarTable extends Migration
      */
     public function up()
     {
-        Schema::create('calendar_table', function (Blueprint $table) {
+        Schema::create('calendar', function (Blueprint $table) {
             $table->date('dt')->primary();
             $table->smallInteger('year')->nullable();
             $table->tinyInteger('quarter')->nullable();
@@ -66,6 +68,7 @@ class CalendarTable extends Migration
         ]);
         Schema::dropIfExists('ints');
     }
+
     /**
      * Reverse the migrations.
      *
@@ -73,6 +76,6 @@ class CalendarTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('calendar_table');
+        Schema::dropIfExists('calendar');
     }
 }
