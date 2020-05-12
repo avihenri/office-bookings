@@ -42,19 +42,20 @@
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="./dashboard.html">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
               <i class="material-icons">home</i>
               <p>Home</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/admin/propertyManagement/create">
+              <i class="material-icons">apartment</i>
+              <p>Property Management</p>
+            </a>
+          </li>
           <li>
-            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Logout"> 
-              <span class="admin-nav-bg">{{ __('Logout') }}</span> <i class="fas fa-sign-in-alt"></i>
-          </a>         
-          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;"> 
-              @csrf 
-          </form>
+            
           </li>
          
         </ul>
@@ -85,24 +86,33 @@
             </form>
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">notifications</i>
                   <span class="notification">1</span>
                   <p class="d-lg-none d-md-block">
                     Some Actions
                   </p>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink2">
                   <a class="dropdown-item" href="javascript:void(0)">Mike John responded to your email</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">
-                  <i class="material-icons">person</i>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">person</i>     
                   <p class="d-lg-none d-md-block">
-                    Account
-                  </p>
+                    Your Account
+                  </p> 
                 </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)">Account</a>
+                  <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Logout"> 
+                    <span class="admin-nav-bg">{{ __('Logout') }}</span> <i class="fas fa-sign-in-alt"></i>
+                </a>         
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;"> 
+                    @csrf 
+                </form>
+                </div>
               </li>
             </ul>
           </div>
@@ -112,7 +122,7 @@
 
       {{-- Start: Content --}}
       <div class="content">
-       @yield('content')
+          @yield('content')
       </div>
 
       {{-- Start: footer --}}

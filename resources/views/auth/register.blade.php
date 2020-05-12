@@ -91,6 +91,13 @@
                             </div>
                         </div>
 
+                        {{-- <div class="form-group row">
+                            <label for="imgPath" class="col-md-4 col-form-label">{{ __('Image') }}</label>
+                            <div class="col-md-12"> --}}
+                                <input id="imgPath" type="hidden" class="form-control mt-2" name="imgPath" value="" autofocus>
+                            {{-- </div>
+                        </div> --}}
+
                         <div class="form-group row mb-0">
                             <div class="col-md-12 text-center">
                                 <button type="submit" class="btn btn-primary">
