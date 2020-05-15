@@ -81,41 +81,7 @@
                     </div>
                   </div>
                   {{-- END: ADD PROPERTY --}}
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                            <ul class="inline-list">
-                                <li><h4 class="card-title">Set 1 of 6</h4></li>
-                                <li class="pull-right"><button type="button" class="btn btn-sm btn-info">Block Info</button></li>
-                            </ul>                          
-                        </div>
-                        <div class="card-body">
-                            <div class="flex-container">
-                                <div class="flex-desk">
-                                    <img src="https://via.placeholder.com/150" >
-                                </div>
-                                <div class="flex-desk">
-                                    <img src="https://via.placeholder.com/150" >
-                                </div>
-                                <div class="flex-desk">
-                                    <img src="https://via.placeholder.com/150" >
-                                </div>
-                                <div class="flex-desk">
-                                    <img src="https://via.placeholder.com/150" >
-                                </div>
-                                <div class="flex-desk">
-                                    <img src="https://via.placeholder.com/150" >
-                                </div>
-                                <div class="flex-desk">
-                                    <img src="https://via.placeholder.com/150" >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
+              
             </div>
         </div>
     </div>

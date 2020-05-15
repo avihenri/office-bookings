@@ -33,11 +33,15 @@
   
   /* COLORS */
   .white {
-    color: #fff
+    color: #fff !important;
   }
   
   .dark {
-    color: #343a40!important
+    color: #343a40 !important;
+  }
+
+  .background-light {
+    background: lightgrey !important;
   }
   
   /* FONT/TEXT */
@@ -85,7 +89,11 @@
     max-width: 100px;
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%;    
+  }
+
+  .border-stn {
+    border-radius: 50%; 
     border: 2px solid;
   }
   

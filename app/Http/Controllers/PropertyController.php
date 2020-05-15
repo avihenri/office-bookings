@@ -18,7 +18,7 @@ class PropertyController extends Controller
     {
         // $properties = DB::table('pro')
 
-        return view('/admin/propertyManagement/create');
+        return view('/admin/propertyManagement/index');
     }
 
     /**
@@ -28,7 +28,7 @@ class PropertyController extends Controller
      */
     public function create()
     {
-        //
+        return view('/admin/propertyManagement/create');
     }
 
     /**

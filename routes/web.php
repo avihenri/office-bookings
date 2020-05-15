@@ -14,5 +14,8 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin/propertyManagement/create', 'PropertyController@index');
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/admin/propertyManagement/', 'PropertyController@index');
+    Route::get('/admin/propertyManagement/create', 'PropertyController@create');
+});
