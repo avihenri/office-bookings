@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('company')->nullable();
             $table->text('bio')->nullable();
-            $table->string('imgPath')->nullable();
+            $table->string('imgPath')->default('https://via.placeholder.com/150');
             $table->string('isAdmin')->default(0);
             $table->rememberToken();
             $table->timestamps();

@@ -105,7 +105,7 @@
                   </p> 
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="javascript:void(0)">Account</a>
+                  <a class="dropdown-item" href="/profile">Account</a>
                   <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" title="Logout"> 
                     <span class="admin-nav-bg">{{ __('Logout') }}</span> <i class="fas fa-sign-in-alt"></i>
                 </a>         

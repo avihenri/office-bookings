@@ -16,6 +16,11 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', 'HomeController@index')->name('home');
+
+    // ADMIN
     Route::get('/admin/propertyManagement/', 'PropertyController@index');
     Route::get('/admin/propertyManagement/create', 'PropertyController@create');
+
+    // PROFILE
+    Route::get('/profile', 'ProfileController@index');
 });
